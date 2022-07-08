@@ -81,3 +81,17 @@ function addPunctuation('???') {
 const yelling = addPunctuation('!!');
 console.log(yelling('Llama'));
 
+// add-first-element
+
+function addFirst('element') {
+    const array = [];
+    return callback(array) {
+        return ['element' + array];
+    }
+}
+
+const addStart = addFirst("purple")(["red", "orange", "blue"]);
+console.log("addStart", addStart);
+const addNumber = addFirst(1)([2, 3, 4, 5]);
+console.log("addNumber", addNumber);
+
