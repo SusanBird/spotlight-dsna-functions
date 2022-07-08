@@ -71,3 +71,12 @@ const someTest2 = some([1, 7, 3], (n) => n % 2 === 0);
 console.log("someTest", someTest);
 console.log("someTest2", someTest2);
 
+//add punctuation
+
+function addPunctuation('???') {
+    const string = ('some string');
+    return callback(string + '???');
+}
+
+const yelling = addPunctuation('!!');
+console.log(yelling('Llama'));
