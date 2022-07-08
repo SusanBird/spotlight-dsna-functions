@@ -18,10 +18,10 @@ map(myArray, (x) => x ** 2);
 
 //filter
 
-function filter(arr, callback) {
+function filter(arr, predicate) {
     for (let i = 0; i <arr.length; i++) {
         const item = arr[i];
-        newItem = callback(item);
+        newItem = predicate(item);
         if (newItem) {
             newArray.push(item);
         }
@@ -32,4 +32,18 @@ function filter(arr, callback) {
 
 filter([2, 6, 5], (x) => x % 2 === 0);
 filter([6, 17, 34], (x) => x % 17 === 0);
+
+//every
+
+function every(arr, predicate) {
+    for (let i = 0; i <arr.length; i++) {
+    const item = arr[i];
+    newItem = predicate(item);
+    if (newItem) {
+        return true;
+    } else { 
+        return 'false';
+    }
+  }
+}
 
