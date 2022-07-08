@@ -95,3 +95,19 @@ console.log("addStart", addStart);
 const addNumber = addFirst(1)([2, 3, 4, 5]);
 console.log("addNumber", addNumber);
 
+//digits-sum-root
+
+function rootDigit(n) {
+    const digits = number.toString().split('');
+    const numbers = digits.map(d => +d);
+    const sum = numbers.reduce((a, b) => a + b);
+
+    //no idea...
+}
+
+//repeat-string
+
+function repeat(txt, n) {
+    return (txt * n);
+}
+
